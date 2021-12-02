@@ -807,6 +807,7 @@ h4 {
 }
 #header {
   background-color: var(--l-grey);
+  padding-bottom: 20px;
 }
 #header img {
   width:980px;
@@ -822,6 +823,9 @@ h4 {
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
+  #header {
+    padding: 0;
+  }
   #header nav {
     padding: 14px 10px;
   }
@@ -994,6 +998,7 @@ h4 {
 }
 #section__syoukai {
   background-color: var(--l-grey);
+  position: relative;
 }
 #section__syoukai .date {
   text-align: center;
@@ -1003,7 +1008,10 @@ h4 {
   width: 400px;
   letter-spacing: 0.5px;
   max-width: 100%;
-  position: relative;
+  position: absolute;
+  top: -47px;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: bold;
   z-index: 3;
   background-color: var(--main);
@@ -1012,9 +1020,13 @@ h4 {
 }
 @media screen and (max-width: 768px) {
   #section__syoukai .date {
+    position: relative;
+    top: inherit;
+    left: inherit;
     font-size: 0.9rem;
     padding: 4px 0;
     width: 50%;
+    transform: translateX(0);
   }
 }
 #section__syoukai .syoukai__box {
