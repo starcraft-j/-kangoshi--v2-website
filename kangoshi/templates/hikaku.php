@@ -5,6 +5,7 @@
           'meta_key' => 'rank',
           'orderby' => 'meta_value_num',
           'order' => 'asc',
+          'post_status' => 'publish',
       );
 ?>
 
@@ -17,6 +18,7 @@
         'orderby' => 'meta_value_num',
         'order' => $sort_order,
         's' => $s,
+        'post_status' => 'publish',
         'meta_query' => array($metaquerysp),
     ); 
   ?>
@@ -78,20 +80,27 @@
           </a>
         </td>
         <td><a class="prrrr" href="<?php echo home_url('/'); ?><?php echo $url; ?>" target="_blank">
-            <p><?php echo $number; ?></p>
+            <p><?php num($i); ?></p>
             <p class="star--block"><?php star($i); ?></p>
           </a></td>
         <td>
           <p><?php echo $jobNum; ?></p>
         </td>
         <td>
-          <p><?php foreach($genre as $value) {echo $value.', '; } ?></p>
+          <p><?php foreach($genre as $value) { 
+                if($value == end($genre)) {
+                  echo $value; 
+                } else {
+                  echo $value.', ';
+                }
+              }
+              ?></p>
         </td>
         <td>
-          <p class="maru"><?php maru($speed); ?></p>
+          <p class="maru"><?php maru($i); ?></p>
         </td>
         <td>
-          <p class="maru"><?php maru($service); ?></p>
+          <p class="maru"><?php maru($i); ?></p>
         </td>
         <td>
           <p><?php echo $area; ?></p>

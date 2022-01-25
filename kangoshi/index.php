@@ -7,7 +7,7 @@
       <p class="date"><?php echo date('Y'); ?>年<?php echo date('n'); ?>月最新</p>
       <h2 class="hikaku__title h2__title">
         <div>
-          <span class="f-24 normal">転職成功者が利用した絶対に使うべき</span><span>看護士求人・転職サイトBEST5</span>
+          <span class="f-24 normal">転職成功者が利用した絶対に使うべき</span><span>看護師求人・転職サイトBEST4</span>
         </div>
       </h2>
 

@@ -9,6 +9,7 @@
       'meta_key' => 'rank',
       'orderby' => 'meta_value_num',
       'order' => 'asc',
+      'post_status' => 'publish',
     );
   ?>
 
@@ -56,7 +57,7 @@
           </a>
         </div>
         <div class="left__hyouka">
-          <span class="hyouka__star"><?php star($i); ?></span><span class="hyouka__number"><?php echo $number; ?></span>
+          <span class="hyouka__star"><?php star($i); ?></span><span class="hyouka__number"><?php echo num($i); ?></span>
         </div>
       </div>
 
