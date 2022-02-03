@@ -35,11 +35,11 @@
     </div>
     <div class="item__logo">
       <a href="<?php echo home_url('/'); ?><?php echo $url; ?>" target="_blank" class="prrrr">
-        <img src="<?php bloginfo('template_url'); ?>/images/top/ranking__logo--r<?php echo $i; ?>.png" alt="">
+        <img src="<?php echo $logo; ?>" alt="">
       </a>
     </div>
   </div>
   
   <?php $i++; endwhile; endif; wp_reset_query(); ?>
-
+z
 </div>
